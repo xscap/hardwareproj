@@ -1,0 +1,445 @@
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+      padding: 0;
+      
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: black;
+      color: #61dafb;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    animation: glow 1s infinite alternate;
+    
+  }
+  .logo{
+    
+    width: 120px;
+    height: 80px;
+     
+    
+  }
+  @keyframes glow {
+    from {
+      background-color: #121212; /* Same as the body background color */
+      box-shadow: 0 0 10px 5px blue; /* Set the glow color and spread */
+    }
+    to {
+      background-color: #001f33; /* Set the color you want during the glow effect */
+      box-shadow: 0 0 20px 10px black; /* Adjust the glow color and spread */
+    }
+  }
+  
+  
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .searchInput::placeholder {
+    color: lightgray;
+  }
+  
+  .limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+  }
+  
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+    padding-left: 100px;
+    
+  }
+
+  .menuItem:hover{
+    color: green;
+    transition: 1s ease-out;
+   
+
+  }
+
+  
+
+  .slider{
+    overflow: hidden;
+  }
+  
+  .sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .sliderBg {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .sliderImg {
+    z-index: 1;
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    
+  }
+  
+  .sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+
+  .videonote{
+    padding: 5%;
+    text-align: center;
+    color: whitesmoke;
+    
+  }
+
+  .video-container {
+    width: 67%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    animation: smirk 4s infinite alternate;
+    border-radius: 10px;
+    
+    display: flex;
+    padding: 20px;
+  }
+
+    
+    .video-container:hover{
+      box-shadow: 0 0 40px white;
+      transition: 2s;
+    }
+    
+    
+   
+    
+  .vidTitle{
+    
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    color: white;
+    text-align: center;
+  }
+
+ 
+  
+
+
+
+/* Styling for video controls */
+
+
+video::-webkit-media-controls-play-button {
+    background-color: #2ecc71;
+    border-radius: 50%;
+    height: 3x;
+}
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+    color: #ecf0f1;
+}
+
+.writing{
+  color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+.team{
+  color: white;
+  text-align: center;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  box-shadow: #2ecc71;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: azure;
+  
+  
+
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  
+
+}
+
+
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.featureDesc {
+  color: gray;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:480px) {
+  nav{
+    padding: 20px;
+  }
+}
+
+  .search{
+    display: none;
+  }
+
+  .navBottom{
+    flex-wrap: wrap;
+  }
+
+  .menuItem{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .slider{
+    clip-path: none;
+  }
+
+  .sliderImg{
+    width: 50%;
+    
+  }
+
+  
+
+  .sliderTitle{
+    display: none;
+  }
+
+  .sliderPrice{
+   text-align: center;
+    font-size: small;
+    justify-content: center;
+    
+    color: white;
+  }
+
+
+
+  .features{
+    flex-direction: column;
+  }
+
+  .product{
+    clip-path: none ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productImg{
+    width: 80%;
+  }
+
+  .productDetails{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+
+  .productTitle{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .gallery{
+    display: none;
+  }
+
+  .newSeason{
+    flex-direction: column;
+  }
+
+  .nsItem:nth-child(2){
+    padding: 50px;
+  }
+
+ 
+
+  
+.switch{
+  text-align: center;
+  color: white;
+}
+.bt{
+width: 50px;
+background-color: aqua;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: black;
+font-style: oblique;
+border-radius: 3px solid green;
+}
+.bt:hover{
+  background-color: #2ecc71;
+  animation: gl 5s infinite alternate;
+  color: white;
+    
+}
+
+@keyframes gl {
+  from {
+    background-color: aqua; /* Same as the body background color */
+    box-shadow: 0 0 10px 5px green; /* Set the glow color and spread */
+  }
+  to {
+    background-color: green; /* Set the color you want during the glow effect */
+    box-shadow: 0 0 20px 10px green; /* Adjust the glow color and spread */
+  }
+}
+
+.vaps{
+  color: blue;
+  text-align: center;
+  align-items: right;
+}
+
+.Mainheading h1::first-letter{
+  color: aliceblue;
+}
+.aa{
+  color: white;
+}
+
+.myvid{
+  align-items: center;
+}
+
+
+.maincard{
+    color: pink;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.vid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1262px;
+ 
+}.icontxt{
+  color: white;
+  text-align: center;
+}
+.r{
+  color: white;
+}
+
+.cardtext{
+  text-align: center;
+}
+.cardtitle{
+  text-align: center;
+  
+  font-style: italic;
+  
+  color: white;
+  
+}
